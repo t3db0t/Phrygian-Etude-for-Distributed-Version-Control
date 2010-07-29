@@ -1,0 +1,7 @@
+#N canvas 360 250 690 432 10;
+#X obj 318 385 dac~;
+#X obj 287 194 d-modes phrygian;
+#X floatatom 364 236 5 0 0 0 - - -;
+#X floatatom 374 157 5 0 0 0 - - -;
+#X connect 1 8 2 0;
+#X connect 3 0 1 2;
