@@ -1,7 +1,31 @@
 #N canvas 360 250 690 432 10;
+#X floatatom 331 287 5 0 0 0 - - -;
+#X floatatom 394 129 5 0 0 0 - - -;
+#X obj 328 313 mtof;
+#X obj 327 335 osc~;
+#X text 432 129 0-8;
+#X obj 295 52 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 300 83 metro 200;
+#X obj 357 102 random 9;
+#X msg 591 330 \; pd dsp 1;
+#X msg 591 362 \; pd dsp 0;
+#X obj 219 183 cnv 15 250 60 empty empty Off-Limits 20 12 0 14 -261234
+-66577 0;
+#X obj 281 208 d-modes phrygian 50;
+#X obj 210 363 cnv 15 250 60 empty empty Off-Limits 20 12 0 14 -261234
+-66577 0;
 #X obj 318 385 dac~;
-#X obj 287 194 d-modes phrygian;
-#X floatatom 364 236 5 0 0 0 - - -;
-#X floatatom 374 157 5 0 0 0 - - -;
-#X connect 1 8 2 0;
-#X connect 3 0 1 2;
+#X obj 392 235 f;
+#X obj 392 175 f;
+#X connect 0 0 2 0;
+#X connect 1 0 15 0;
+#X connect 2 0 3 0;
+#X connect 3 0 13 0;
+#X connect 3 0 13 1;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 1 0;
+#X connect 11 8 14 0;
+#X connect 14 0 0 0;
+#X connect 15 0 11 2;
